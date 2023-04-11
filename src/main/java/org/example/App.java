@@ -23,7 +23,7 @@ public class App
     public static void main( String[] args ) throws IOException {
         List<Materia> materias = materias();
         List<Alumno> alumnos = alumnos();
-        String ruta = "C:\\Users\\eugen\\Desktop\\curso java\\Ejercicios\\ejercicio-integrador\\inscripciones.csv";
+        String ruta = "C:\\Users\\eugen\\Desktop\\curso java\\TPintegrador\\inscripciones.csv";
         for (String unaLineaDeInscripcion : Files.readAllLines(Paths.get(ruta))){
             String[] datos = unaLineaDeInscripcion.split(";");
             Inscripcion inscripcion = generarInscripcioinAPartirDeDatos(datos,alumnos,materias);
